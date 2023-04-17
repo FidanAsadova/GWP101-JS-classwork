@@ -161,7 +161,7 @@ console.log(calcArea(arr3));
 // 4.Sort 'arr3' ascending order.
 const arr4 = [8, 44, 14, 2, 23, 1, 22, 34, 9, 0, 6];
 const arr4Sort = arr4.sort((a, b) => a - b);
-console.log(arr4Sort);
+console.log(arr4Sort); /////
 
 // 5.Gather all nested array in one array.
 const arr5 = [5, [8], [9, ["hi", ["don't touch me"], [0]], "9"]];
