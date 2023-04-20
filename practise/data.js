@@ -2296,5 +2296,10 @@ const countries_data = [
 
 //bütün ölkə adlari ve qarsisinda paytaxtı
 
-// let nameArray = [`${countries_data.name} ${countries_data.capital}`];
+// let nameArray = countries_data.map((el)=>`${el.name},${el.capital}`)
 // console.log(nameArray);
+
+//dünya əhalisinin sayı
+
+// let allNameArray = countries_data.reduce((acc, curr, i, arr)=> acc+curr.population, 0)
+// console.log(allNameArray);
