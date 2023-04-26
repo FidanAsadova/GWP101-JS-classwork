@@ -89,6 +89,7 @@ startBtn.addEventListener("click", function () {
     if (time == 0) {
       p.innerHTML = "You missed ):";
       submitBtn.disabled = false;
+      clearInterval(interval)
     }
   }, 1000);
   this.setAttribute("disabled", "true");

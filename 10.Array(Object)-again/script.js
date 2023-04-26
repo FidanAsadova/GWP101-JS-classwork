@@ -78,3 +78,9 @@ function reverseCase(str){
 console.log(reverseCase("Happy Birthday"));
 console.log(reverseCase("MANY THANKS"));
 
+//Convert String to Array/////////////////////////////////////////
+let str = 'I am here'
+// console.log(str.split``);
+// console.log(Array.from(str));
+console.log([...str]);
+
