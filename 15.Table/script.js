@@ -701,7 +701,6 @@ const data = [
   },
 ];
 
-
 let tBody = document.querySelector("tbody");
 let iconD = document.querySelector(".down");
 let iconN = document.querySelector(".down-n");
@@ -744,13 +743,22 @@ idSort.addEventListener("click", function () {
   bool = !bool;
   let idSortData;
   if (bool) {
-    idSortData = data.sort((a, b) => a.id - b.id);
-    iconD.style.display = "inline-block";
-    iconR.style.display = "none";
-  } else {
     idSortData = data.sort((a, b) => b.id - a.id);
     iconD.style.display = "none";
     iconR.style.display = "inline-block";
+    iconN.style.display = "none";
+    iconRN.style.display = "none";
+    idSort.style.color = "green";
+    nameSort.style.color = "black"
+  } else {
+    idSortData = data.sort((a, b) => a.id - b.id);
+    iconD.style.display = "inline-block";
+    iconR.style.display = "none";
+    iconN.style.display = "none";
+    iconRN.style.display = "none";
+    idSort.style.color = "red";
+    nameSort.style.color = "black"
+
   }
   tBody.innerHTML = "";
   drawTable(idSortData);
@@ -760,15 +768,26 @@ nameSort.addEventListener("click", function () {
   bool = !bool;
   let nameSortData;
   if (bool) {
-    nameSortData = data.sort((a, b) => a.first_name.localeCompare(b.first_name));
-    iconN.style.display = "inline-block";
-    iconRN.style.display = "none";
-    nameSort.style.color = "red"
-  } else {
-    nameSortData = data.sort((a, b) => b.first_name.localeCompare(a.first_name));
+    nameSortData = data.sort((a, b) =>
+      b.first_name.localeCompare(a.first_name)
+    );
+    iconD.style.display = "none";
+    iconR.style.display = "none";
     iconN.style.display = "none";
     iconRN.style.display = "inline-block";
-    nameSort.style.color = "green"
+    nameSort.style.color = "green";
+    idSort.style.color = "black"
+
+  } else {
+    nameSortData = data.sort((a, b) =>
+      a.first_name.localeCompare(b.first_name)
+    );
+    iconD.style.display = "none";
+    iconR.style.display = "none";
+    iconN.style.display = "inline-block";
+    iconRN.style.display = "none";
+    nameSort.style.color = "red";
+    idSort.style.color = "black"
 
   }
   tBody.innerHTML = "";
