@@ -31,7 +31,7 @@ table {
     margin: 0 240px;
 }
 
-.down{
+.down, .down-n{
     display: none;
 }
 /* .fa-rotate-180{

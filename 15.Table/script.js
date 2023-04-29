@@ -701,10 +701,12 @@ const data = [
   },
 ];
 
-const dataCopy = [...data];
+
 let tBody = document.querySelector("tbody");
 let iconD = document.querySelector(".down");
+let iconN = document.querySelector(".down-n");
 let iconR = document.querySelector(".fa-rotate-180");
+let iconRN = document.querySelector(".down-r-n");
 let search = document.querySelector("#search");
 let idSort = document.querySelector("#idClick");
 let nameSort = document.querySelector("#nameClick");
@@ -740,7 +742,6 @@ search.addEventListener("input", function (event) {
 
 idSort.addEventListener("click", function () {
   bool = !bool;
-
   let idSortData;
   if (bool) {
     idSortData = data.sort((a, b) => a.id - b.id);
@@ -757,16 +758,18 @@ idSort.addEventListener("click", function () {
 
 nameSort.addEventListener("click", function () {
   bool = !bool;
-
   let nameSortData;
   if (bool) {
     nameSortData = data.sort((a, b) => a.first_name.localeCompare(b.first_name));
-    iconD.style.display = "inline-block";
-    iconR.style.display = "none";
+    iconN.style.display = "inline-block";
+    iconRN.style.display = "none";
+    nameSort.style.color = "red"
   } else {
     nameSortData = data.sort((a, b) => b.first_name.localeCompare(a.first_name));
-    iconD.style.display = "none";
-    iconR.style.display = "inline-block";
+    iconN.style.display = "none";
+    iconRN.style.display = "inline-block";
+    nameSort.style.color = "green"
+
   }
   tBody.innerHTML = "";
   drawTable(nameSortData);
