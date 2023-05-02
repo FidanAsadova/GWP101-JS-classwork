@@ -89,14 +89,14 @@ const books = [
   },
 ];
 
-
 let allCards = document.querySelector(".all-cards");
-// let favorites = JSON.parse("favoriteBooks" ?? [])
+
+let favorites = JSON.parse(localStorage.getItem("favoriteBooks")) || [];
 
 books.forEach((element) => {
   allCards.innerHTML += `
 
-    <div class="col col-3 border p-4">
+    <div class="col col-3 border my-2">
       <h5 class="card-title">${element.year}</h5>
       <p class="card-text">${element.title}</p>
       <p class="card-text">${element.authors}</p>
@@ -105,4 +105,14 @@ books.forEach((element) => {
     </div>
  
     `;
+});
+
+let allFavBtns = document.querySelectorAll(".fav-btn");
+
+allFavBtns.forEach((elem) => {
+  elem.addEventListener("click", function () {
+    let favBook = books.find((item) => item.id === +elem.getAttribute("id"));
+    favorites.push(favBook);
+    localStorage.setItem("favoriteBooks", JSON.stringify(favorites));
+  });
 });

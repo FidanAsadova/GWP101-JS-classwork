@@ -11,15 +11,23 @@
       crossorigin="anonymous"
     />
     <title>Document</title>
+    <style>
+      * {
+        text-decoration: none !important;
+        list-style: none;
+      }
+    </style>
   </head>
   <body>
-    <header>
-        <nav>
-            <ul><li><a href="">Home Page</a></li></ul>
-            <ul><li><a href="">Cards</a></li></ul>
-        </nav>
+    <header class="bg-primary">
+      <nav>
+        <ul class="d-flex justify-content-around p-3">
+          <li><a href="index.html" class="text-white">Books Page</a></li>
+          <li><a href="wishlist.html" class="text-white">Favorite Books</a></li>
+        </ul>
+      </nav>
     </header>
-    <div class="container-fluid">
+    <div class="container">
       <div class="row all-cards"></div>
     </div>
     <script src="./script.js"></script>
