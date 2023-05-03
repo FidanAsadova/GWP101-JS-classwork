@@ -8,6 +8,7 @@
 * 07.Array-methods - https://cozy-starburst-2469fc.netlify.app/
 * 08.string(array)-methods - https://bejewelled-cobbler-fcf06d.netlify.app/
 * 09.object-array - https://moonlit-liger-453e70.netlify.app/
+* 10.Array(Object)-again - https://calm-tiramisu-7ac403.netlify.app/
 * 12.DOM - https://classy-dango-e52901.netlify.app/
 * 13.Browser-Events - https://storied-dieffenbachia-32d063.netlify.app/
 * 15.Table - https://rainbow-trifle-056126.netlify.app/
