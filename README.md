@@ -14,4 +14,5 @@
 * 13.Browser-Events - https://storied-dieffenbachia-32d063.netlify.app/
 * 15.Table - https://rainbow-trifle-056126.netlify.app/
 * 16.Repeat - https://venerable-cannoli-8e76ad.netlify.app/
+* 17.Storage - https://extraordinary-marzipan-1de2d7.netlify.app/ 
 * 19.Events - https://splendid-dieffenbachia-cda365.netlify.app/
