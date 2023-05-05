@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+}
+
+table th{
+    background-color: teal;
+}
+
+table td{
+    background-color:beige;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 10px auto;
+    border-collapse: collapse;
+}
