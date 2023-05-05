@@ -35,7 +35,8 @@ function list() {
           <li
                 class="list-group-item list-group-item-info my-2 d-flex justify-content-between align-items-center rounded"
               >
-                <span>${item.textTodo}</span>
+              <input type="checkbox" class="check" onclick=checkTodo(${item.id})>  
+              <span class="">${item.textTodo}</span>
                 <div>
                   <button type="button" class="btn btn-success onclick=editTodo(${item.id})">
                     Edit
@@ -56,15 +57,17 @@ function removeTodo(id) {
 }
 
 let editBtn = document.querySelector(".btn-success");
+let check = document.querySelector(".check");
 
-editBtn.forEach((item) => {
-    item.addEventListener("click", function () {
-      todoInput.value = this.closest("li").firstElementChild.innerText;
-      todoInput.focus();
-      this.closest("li").remove();
-    });
-  });
+// function editTodo(id) {
+//   console.log('ssss');
+//   if(editList = editList.find((el) => el.id == id)){
+//     editList.textTodo==todoInput.value
+//   }
+//   localStorage.setItem("todos", JSON.stringify(editList));
+//   list();
+// }
+// editTodo()
 
-  todoInput.value = "";
-  addTodo.disabled = true;
-
+// todoInput.value = "";
+// addTodo.disabled = true;
