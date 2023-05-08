@@ -56,18 +56,3 @@ function removeTodo(id) {
   list();
 }
 
-let editBtn = document.querySelector(".btn-success");
-let check = document.querySelector(".check");
-
-// function editTodo(id) {
-//   console.log('ssss');
-//   if(editList = editList.find((el) => el.id == id)){
-//     editList.textTodo==todoInput.value
-//   }
-//   localStorage.setItem("todos", JSON.stringify(editList));
-//   list();
-// }
-// editTodo()
-
-// todoInput.value = "";
-// addTodo.disabled = true;
