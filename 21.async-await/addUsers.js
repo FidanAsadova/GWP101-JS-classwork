@@ -3,9 +3,7 @@ const userName = document.querySelector("#userName");
 const userEmail = document.querySelector("#userEmail");
 const form = document.querySelector("form");
 
-// addBtn.disabled = true;
-
-const addBox = async (id) => {
+const addBox = async () => {
   await fetch(`http://localhost:8080/users/`, {
     method: "POST",
     headers: {
@@ -20,11 +18,13 @@ const addBox = async (id) => {
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  addBox();
+  if (userName.value && userEmail.value) {
+    addBox();
+    window.location = "http://127.0.0.1:5500/index.html";
+  } else {
+    alert("Please fill in this form");
+  }
 });
 
-addBtn.addEventListener("click", function () {
-  window.location.assign("http://127.0.0.1:5500/21.async-await/index.html");
-});
 
-// window.location.assign("http://127.0.0.1:5500/21.async-await/index.html");
+
