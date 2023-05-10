@@ -17,3 +17,5 @@
 * 17.Storage - https://extraordinary-marzipan-1de2d7.netlify.app/
 * 18.JQuery - https://rainbow-semifreddo-7c9562.netlify.app/
 * 19.Events - https://splendid-dieffenbachia-cda365.netlify.app/
+* 20.Promise_fetch - https://peppy-douhua-04f73b.netlify.app/
+* 21.async-await - https://unique-ganache-c8e559.netlify.app/
