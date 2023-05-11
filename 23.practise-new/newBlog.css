@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  /* padding: 30px; */
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  gap: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul a {
+  list-style: none;
+  text-decoration: none;
+  color: black;
+}
+
+.logo {
+  color: darkred;
+}
+.newLogo {
+  color: darkred;
+}
+
+.addBlog{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form{
+    margin-top: 50px;
+}

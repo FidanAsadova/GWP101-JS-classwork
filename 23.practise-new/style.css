@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header{
+    /* padding: 30px; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{
+    gap: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+header nav ul a{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+
+.logo{
+    color: darkred;
+}
+
+.cards{
+    /* height: 30vh; */
+    border: 1px solid gray;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 12px;
+}
