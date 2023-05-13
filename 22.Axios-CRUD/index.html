@@ -75,6 +75,18 @@
               />
             </div>
             <div class="col-10 col-md-8 mb-3">
+              <label for="password" class="text-light">Card Number</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                class="form-control"
+                placeholder="xxxx-xxxx-xxxx-xxxx"
+                maxlength="16"
+                minlength="8"
+              />
+            </div>
+            <div class="col-10 col-md-8 mb-3">
               <input
                 type="submit"
                 id="submitBtn"
@@ -83,7 +95,9 @@
               />
             </div>
           </form>
-          <div class="col-10 col-md-8 mt-5">
+        </div>
+        <div class="row">
+          <div class="col-12 mt-5">
             <input
               type="search"
               id="searchInput"
@@ -100,6 +114,7 @@
                   </th>
                   <th id="thLastName">Last Name</th>
                   <th>Email</th>
+                  <th>Card Number</th>
                   <th>Actions</th>
                 </tr>
               </thead>
