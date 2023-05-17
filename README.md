@@ -20,3 +20,5 @@
 * 20.Promise_fetch - https://peppy-douhua-04f73b.netlify.app/
 * 21.async-await - https://unique-ganache-c8e559.netlify.app/
 * 22.Axios-CRUD - https://willowy-figolla-24beb4.netlify.app/
+* 23.practise-new - https://precious-queijadas-d6ad76.netlify.app/
+* Country-cards - https://sparkly-puffpuff-4b8292.netlify.app/
