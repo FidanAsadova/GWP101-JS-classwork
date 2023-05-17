@@ -23,7 +23,7 @@ function drawTable(arr) {
               <td>
                 <a class="btn btn-success" href="user.html?id=${element.id}">Edit</a>
                 <a class="btn btn-danger" href="" onclick= deleteUser("${element.id}")>Delete</a>
-                <a class="ms-4 likeIcon" href=""><i class="fa-solid fa-heart" id=${element.id} onclick= favoritesUser("${element.id}") style="color: red;"></i></a>
+                <a class="ms-4 likeIcon" href=""><i class="fa-solid fa-heart" id=${element.id} onclick=addFavUser('${element.id}') style="color: red;"></i></a>
               </td>
             </tr>
     `;
@@ -79,23 +79,23 @@ async function getData() {
   drawCards(data);
 }
 
-let allFavBtns = document.querySelectorAll(".likeIcon");
+let isAvailable;
 
-// allFavBtns.forEach((btn) => {
-//   getData();
-//   let click = data.find((user) => user.id == btn.id);
+const favUsers = JSON.parse(localStorage.getItem("fav-users")) || [];
 
-//   if (!click) {
-//     getData();
-//     let favUser = data.find((user) => user.id == btn.id);
-//     favorites.push(favUser);
-//     localStorage.setItem("favoriteUsers", JSON.stringify(favorites));
-//     drawTable();
-//   } else {
-//     alert("This user added");
-//   }
-// });
-
+// let allFavBtns = document.querySelectorAll(".likeIcon");
+function addFavUser(id) {
+  const res = axios.get(`${BASE_URL}/${id}`);
+  const data = res.data;
+  isAvailable = favUsers.some((user) => user.id === data.id);
+  if (!isAvailable) {
+    favUsers.push(data);
+    localStorage.setItem("fav-users", JSON.stringify(favUsers));
+  } else {
+    alert("Character already exists in favorite list!");
+  }
+}
+// addFavUser();
 // let editStatus = false;
 
 // allFavBtns.addEventListener("click", function () {

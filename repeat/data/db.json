@@ -93,6 +93,22 @@
       "photo": "./img/undefined",
       "date": "Wed May 17 2023",
       "id": 28
+    },
+    {
+      "firstname": "Aladdin",
+      "lastname": "Perkins",
+      "email": "fuvivega@mailinator.com",
+      "photo": "./img/WhatsApp Image 2023-05-15 at 12.16.50 (1).jpeg",
+      "date": "Wed May 17 2023",
+      "id": 29
+    },
+    {
+      "firstname": "Hanna",
+      "lastname": "Medina",
+      "email": "rupyzi@mailinator.com",
+      "photo": "./img/WhatsApp Image 2023-05-15 at 12.16.51 (1).jpeg",
+      "date": "Wed May 17 2023",
+      "id": 30
     }
   ]
 }
