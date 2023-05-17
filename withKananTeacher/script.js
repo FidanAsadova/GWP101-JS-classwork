@@ -14,7 +14,9 @@ function drawCountry(arr) {
   <div class="col col-sm-12 col-md-6 col-lg-3">
               <a href="./details.html?name=${element.name}">
                 <div class="card m-2 vh-75" style="width: 15rem">
-                  <img src="${element.flags.svg}" class="card-img-top" alt="country foto" />
+                <div class="img-div">
+                <img src="${element.flags.svg}" class="card-img-top" alt="country foto" />
+                </div>
                   <div class="card-body">
                     <h5 class="card-title">${element.name}</h5>
                     <p class="card-text">${element.region}</p>
@@ -48,6 +50,6 @@ select.addEventListener("change", function (event) {
         event.target.value.toLocaleLowerCase()
       );
     });
-    drawCountry(selectRegion)
+    drawCountry(selectRegion);
   });
 });
