@@ -10,6 +10,13 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./SCSS/main.css" />
     <title>Document</title>
   </head>
@@ -23,11 +30,19 @@
           <nav>
             <ul>
               <li><a href="">Home</a></li>
-              <li><a href="">Add User</a></li>
-              <li><a href="">Favorite</a></li>
+              <li><a href="user.html" target="_blank">Add User</a></li>
+              <li><a href="favoriteUser.html" target="_blank">Favorite</a></li>
               <li><a href="">Contact</a></li>
             </ul>
           </nav>
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars" style="color: #000000"></i>
+          </div>
+          <!-- <div class="click-bar">
+            <ul>
+              <li><a href=""></a></li>
+            </ul>
+          </div> -->
         </div>
       </div>
     </header>
@@ -48,12 +63,12 @@
             <th>Actions</th>
           </thead>
           <tbody>
-            <tr>
+            <!-- <tr>
               <td>1</td>
               <td>
                 <img
                   class="rounded-circle"
-                  src="./SCSS/WhatsApp Image 2023-05-15 at 12.16.55.jpeg"
+                  src="./img/WhatsApp Image 2023-05-15 at 12.16.55.jpeg"
                   alt=""
                 />
               </td>
@@ -62,52 +77,33 @@
               <td>edo@mailinator.com</td>
               <td>5/14/2023</td>
               <td>
-                <a class="btn btn-primary" href="">Edit</a>
+                <a class="btn btn-success" href="">Edit</a>
                 <a class="btn btn-danger" href="">Delete</a>
+                <a class="btn btn-primary" href="">Add Fav</a>
               </td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td><img src="" alt="" /></td>
-              <td>Ego</td>
-              <td>Anton</td>
-              <td>edo@mailinator.com</td>
-              <td>5/14/2023</td>
-              <td>
-                <a class="btn btn-primary" href="">Edit</a>
-                <a class="btn btn-danger" href="">Delete</a>
-              </td>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td><img src="" alt="" /></td>
-              <td>Ego</td>
-              <td>Anton</td>
-              <td>edo@mailinator.com</td>
-              <td>5/14/2023</td>
-              <td>
-                <a class="btn btn-primary" href="">Edit</a>
-                <a class="btn btn-danger" href="">Delete</a>
-              </td>
-            </tr>
+            </tr> -->
           </tbody>
         </table>
         <div class="allCards">
           <div class="card">
             <div class="top">
-              <span>Id:1</span>
-              <span>Date: 5/14/2023</span>
+              <span class="id">Id:1</span>
+              <span class="date">Date: 5/14/2023</span>
             </div>
-            <div class="bottom d-flex">
+            <div class="bottom">
               <div class="img">
-                <img src="" alt="foto" />
+                <img
+                  class="rounded-circle"
+                  src=""
+                  alt="foto"
+                />
               </div>
               <div class="test-text">
                 <span>Ego Anton</span>
                 <span>ego@mailinator.com</span>
               </div>
               <div class="buttons">
-                <a class="btn btn-primary" href="">Edit</a>
+                <a class="btn btn-success" href="">Edit</a>
                 <a class="btn btn-danger" href="">Delete</a>
               </div>
             </div>
@@ -115,5 +111,12 @@
         </div>
       </div>
     </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js.js"></script>
   </body>
 </html>
