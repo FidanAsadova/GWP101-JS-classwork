@@ -11,6 +11,11 @@ header {
   width: 100%;
   position: fixed;
 }
+@media only screen and (max-width: 576px) {
+  header {
+    background-color: black;
+  }
+}
 header .header {
   height: 80px;
   display: flex;
@@ -38,6 +43,11 @@ header .header nav ul li a {
   color: black;
   border: 1px solid transparent;
   border-radius: 8px;
+}
+@media only screen and (max-width: 576px) {
+  header .header nav ul li a {
+    color: white;
+  }
 }
 header .header nav ul li a:hover {
   color: red;
@@ -94,7 +104,7 @@ header .header .menu-icon {
 }
 .allCards .card {
   padding: 10px;
-  background-color: rgba(128, 128, 128, 0.082);
+  background-color: gray;
 }
 @media only screen and (max-width: 576px) {
   .allCards .card {

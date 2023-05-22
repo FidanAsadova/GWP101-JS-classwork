@@ -13,7 +13,7 @@
       "lastname": "Antonn",
       "email": "fffffff@mail.ru",
       "id": 12,
-      "photo": "./img/undefined",
+      "photo": "./img/chef.jpeg",
       "date": "Wed May 17 2023"
     },
     {
@@ -21,7 +21,7 @@
       "lastname": "Heikkonen",
       "email": "Anne@mail.ru",
       "id": 15,
-      "photo": "./img/undefined",
+      "photo": "./img/chef.jpeg",
       "date": "Wed May 17 2023"
     },
     {
