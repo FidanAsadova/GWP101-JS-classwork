@@ -129,15 +129,15 @@ header #header nav ul li a:hover {
   position: relative;
   z-index: -1;
 }
-#news .news .head .news-p {
+#news .news .cards .head .news-p {
   font-size: 40px;
   font-weight: 100;
 }
-#news .news .head .border-news {
+#news .news .cards .head .border-news {
   border-bottom: 2px solid black;
   width: 7%;
 }
-#news .row .col-10 #search {
+#news .news .row .col-10 #search {
   outline: none;
 }
 
