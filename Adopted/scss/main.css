@@ -109,7 +109,13 @@ header #redHeader nav ul li a:hover {
   font-size: 35px;
   font-weight: 400;
 }
-#stories .container .row .col img:hover {
+#stories .container .row .col .hover-div {
+  overflow: hidden;
+}
+#stories .container .row .col .hover-div img {
+  transition: 0.3s;
+}
+#stories .container .row .col .hover-div img:hover {
+  transition: 0.3s all ease;
   transform: scale(1.1);
-  transition: 0.7s;
 }/*# sourceMappingURL=main.css.map */

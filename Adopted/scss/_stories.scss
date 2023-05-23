@@ -10,10 +10,14 @@
     }
     .row {
       .col {
-        img {
-          &:hover {
-            transform: scale(1.1);
-            transition: .7s;
+        .hover-div {
+          overflow: hidden;
+          img {
+            transition: 0.3s;
+            &:hover {
+              transition: 0.3s all ease;
+              transform: scale(1.1);
+            }
           }
         }
       }
