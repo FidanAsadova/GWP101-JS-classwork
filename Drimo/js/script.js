@@ -20,8 +20,8 @@ function drawCards(arr) {
                   <p class="card-text">${element.body}
                   </p>
                   <p class="price">$ ${element.price}</p>
-                  <button class="btn btn-danger"  onclick=deleteCard("${element.id}",this)>Delete</button>
-                  <button  class="btn btn-success" onclick= addFavorite("${element.id}")>Add Favorite</button>
+                  <button class="btn btn-danger"  onclick="deleteCard(${element.id},this)">Delete</button>
+                  <button  class="btn btn-success" onclick= addFavorite(${element.id})>Add Favorite</button>
                 </div>
               </div>
             </span>
