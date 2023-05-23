@@ -18,7 +18,7 @@
         <div class="row mt-5">
           <div class="col col-3"></div>
           <div class="col col-6">
-            <form action="">
+            <form action="index.html">
               <h1 class="text-center">Add Card</h1>
               <div class="mb-3">
                 <label for="cardtitle">Card Title</label>
@@ -28,6 +28,7 @@
                   type="text"
                   id="cardtitle"
                   name="cardtitle"
+                  placeholder="Enter a title..."
                 />
               </div>
               <div class="mb-3">
@@ -38,6 +39,7 @@
                   type="text"
                   id="cardbody"
                   name="cardbody"
+                  placeholder="Enter a paragraph..."
                 />
               </div>
               <div>
@@ -48,17 +50,19 @@
                   type="number"
                   id="price"
                   name="price"
+                  placeholder="Enter a price..."
                 />
               </div>
               <div class="mb-3">
-                <br>
+                <br />
                 <label for="img">Add Image</label>
-                <br>
+                <br />
                 <input
                   class="w-100 p-1 all-input"
                   type="text"
                   id="img"
                   name="img"
+                  placeholder="Add an url..."
                 />
               </div>
               <br />
@@ -71,7 +75,12 @@
         </div>
       </div>
     </section>
-
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+      integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="./js/addCard.js"></script>
   </body>
 </html>

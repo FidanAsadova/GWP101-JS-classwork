@@ -1,26 +1,30 @@
-let cards = document.querySelector(".cards");
 let BASE_URL = "http://localhost:8080/users";
+let cards = document.querySelector(".cards");
+let bool = false;
+let sort = document.querySelector(".sort");
+let seacrh = document.querySelector("#search");
 
 function drawCards(arr) {
   cards.innerHTML = "";
   arr.forEach((element) => {
     cards.innerHTML += `
-        <div class="col col-12 col-sm-6 col-lg-4 p-5">
-              <div class="card" style="width: 22rem">
+        <span class="col col-12 col-sm-6 col-lg-4 mb-4 mx-0">
+              <div class="card">
                 <img
                   src="${element.img}"
                   class="card-img-top"
-                  alt="country foto"
+                  alt="card foto"
                 />
                 <div class="card-body">
                   <p class="card-text">${element.title}</p>
                   <p class="card-text">${element.body}
                   </p>
-                  <p class="price">${element.price}</p>
-                  <button onclick= deleteCard("${element.id}") class="btn btn-danger">Delete</button>
+                  <p class="price">$ ${element.price}</p>
+                  <a class="btn btn-danger"  onclick= deleteCard("${element.id}", this)>Delete</a>
+                  <a  class="btn btn-success" onclick= addFavorite("${element.id}")>Add Favorite</a>
                 </div>
               </div>
-            </div>
+            </span>
         `;
   });
 }
@@ -34,11 +38,12 @@ async function getData() {
 }
 getData();
 
-async function deleteCard(id) {
+
+async function deleteCard(id, btn) {
+  console.log(id);
   await axios.delete(`${BASE_URL}/${id}`);
+  btn.closest("span").remove();
 }
-let bool = false;
-let sort = document.querySelector(".sort");
 
 sort.addEventListener("click", async function () {
   let res = await axios.get(BASE_URL);
@@ -50,5 +55,16 @@ sort.addEventListener("click", async function () {
     sorted = data.sort((a, b) => b.price - a.price);
   }
   drawCards(sorted);
-  bool = !bool
+  bool = !bool;
+});
+
+seacrh.addEventListener("input", async function (e) {
+  let res = await axios.get(BASE_URL);
+  let data = await res.data;
+  const searchName = data.filter((item) => {
+    return `${item.title}`
+      .toLocaleLowerCase()
+      .includes(e.target.value.toLocaleLowerCase());
+  });
+  drawCards(searchName);
 });

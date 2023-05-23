@@ -1,6 +1,10 @@
 #news {
     padding: 100px 0;
   .news {
+    .cards{
+      position: relative;
+      z-index: -1;
+    }
     .head {
       .news-p {
         font-size: 40px;
@@ -9,6 +13,13 @@
       .border-news {
         border-bottom: 2px solid black;
         width: 7%;
+      }
+    }
+  }
+  .row{
+    .col-10{
+      #search{
+        outline: none;
       }
     }
   }

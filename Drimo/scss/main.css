@@ -56,18 +56,18 @@ header #header nav ul li a:hover {
 #home .home .head .bg-orange-parg h1 {
   color: white;
 }
-#home .row .col-8 .info-left p {
+#home .row .col-md-8 .info-left p {
   color: white;
 }
-#home .row .col-8 .info-left #best-web {
+#home .row .col-md-8 .info-left #best-web {
   font-size: 50px;
   font-weight: 500;
 }
-#home .row .col-8 .info-left #create {
+#home .row .col-md-8 .info-left #create {
   font-size: 40px;
   font-weight: 100;
 }
-#home .row .col-8 .info-left #long {
+#home .row .col-md-8 .info-left #long {
   font-size: 20px;
 }
 #home .row .bottom-info .row .col p {
@@ -125,6 +125,10 @@ header #header nav ul li a:hover {
 #news {
   padding: 100px 0;
 }
+#news .news .cards {
+  position: relative;
+  z-index: -1;
+}
 #news .news .head .news-p {
   font-size: 40px;
   font-weight: 100;
@@ -133,7 +137,37 @@ header #header nav ul li a:hover {
   border-bottom: 2px solid black;
   width: 7%;
 }
+#news .row .col-10 #search {
+  outline: none;
+}
 
+#footer {
+  background-color: #f9faff;
+  padding-top: 60px;
+}
+.fa-brands #footer .container .footer .top-footer .logo-footer .icons a:hover {
+  color: orangered;
+  transition: 1s;
+}
+#footer .container .footer .top-footer .contact {
+  padding-bottom: 60px;
+}
+#footer .container .footer .top-footer .contact .row .col p {
+  font-size: 20px;
+}
+#footer .container .footer .top-footer .contact .row .col ul li a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 400;
+}
+#footer .container .footer .top-footer .contact .row .col ul li a:hover {
+  color: orangered;
+  transition: 1s;
+}
+#footer .container .footer p {
+  margin: 0;
+  padding: 30px 0;
+}
 #footer .container .footer p a {
   text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
