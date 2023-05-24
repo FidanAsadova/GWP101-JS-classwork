@@ -21,7 +21,8 @@ function drawCards(arr) {
                   </p>
                   <p class="price">$ ${element.price}</p>
                   <button class="btn btn-danger"  onclick="deleteCard(${element.id},this)">Delete</button>
-                  <button  class="btn btn-success" onclick= addFavorite(${element.id})>Add Favorite</button>
+                  <button  class="btn btn-success" onclick= favCard(${element.id})>Add Favorite</button>
+                  <a href="addCard.html?id=${element.id}"  class="btn btn-primary" onclick= editCard(${element.id})>Edit</a>
                 </div>
               </div>
             </span>
@@ -37,7 +38,6 @@ async function getData() {
   drawCards(data);
 }
 getData();
-
 
 async function deleteCard(id, btn) {
   console.log(id);
@@ -68,3 +68,10 @@ seacrh.addEventListener("input", async function (e) {
   });
   drawCards(searchName);
 });
+
+async function favCard(favId) {
+  let res = await axios.get(`${BASE_URL}/${favId}`);
+  let obj = await res.data;
+  await axios.post("http://localhost:8080/fav", obj);
+}
+favCard()
