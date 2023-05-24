@@ -1,4 +1,4 @@
-# GWP101-JS
+# LIVE-link
 * 01.intro-js - https://superb-elf-15c8e9.netlify.app/
 * 02.if-elseVsSwitch - https://lambent-bombolone-30c53f.netlify.app/
 * 03.loops(for,while) - https://shiny-axolotl-9e2e67.netlify.app/
