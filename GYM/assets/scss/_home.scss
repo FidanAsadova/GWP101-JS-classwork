@@ -1,0 +1,24 @@
+body {
+    position: relative;
+    z-index: 999;
+  #home {
+    background-image: url("http://127.0.0.1:5500/assets/img/header-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-image-width: 100%;
+    .container {
+      .home {
+        padding: 230px 0;
+        display: flex;
+        justify-content: center;
+        .home-p {
+          width: 70%;
+          .real {
+            font-size: 60px;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+  }
+}

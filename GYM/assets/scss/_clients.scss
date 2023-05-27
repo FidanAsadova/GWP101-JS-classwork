@@ -1,0 +1,36 @@
+#clients {
+  .container {
+    .clients {
+      padding: 100px 0;
+      .head {
+        .title {
+          font-size: 40px;
+          font-weight: 700;
+        }
+      }
+      .row {
+        .col {
+          position: static;
+          z-index: 2;
+          .pack {
+            position: relative;
+            .img {
+              overflow: hidden;
+              img {
+                transition: 0.3s;
+                &:hover {
+                  transform: scale(1.2);
+                }
+              }
+            }
+            .bg-danger {
+              position: absolute;
+              left: 20px;
+              bottom: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

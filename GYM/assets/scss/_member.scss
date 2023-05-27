@@ -1,0 +1,24 @@
+#member {
+    background-image: url("../img/callto-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  .container {
+    .member {
+        padding: 100px 0;
+        .head{
+            .title-span{
+                padding: 0 150px;
+            }
+            .btn{
+                background-color:#F6214B;
+                border-color: #F6214B;
+                border-radius: 20px;
+                &:hover{
+                    background-color: transparent;
+                    border-color: #fff;
+                }
+            }
+        }
+    }
+  }
+}
