@@ -74,6 +74,10 @@ header .nav-con .nav nav .nav-ul li a {
   color: black;
   font-size: 13px;
   font-weight: 600;
+  transition: 0.5s;
+}
+header .nav-con .nav nav .nav-ul li a:hover {
+  color: #F6214B;
 }
 
 body {
