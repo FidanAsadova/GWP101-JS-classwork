@@ -27,3 +27,4 @@
 * Drimo - https://sprightly-sherbet-43ae88.netlify.app/
 * BizPro - https://brilliant-frangipane-a77ed2.netlify.app/
 * Gym - https://verdant-piroshki-0ec12e.netlify.app/
+* Robotics - https://jolly-zuccutto-0f7a66.netlify.app/
