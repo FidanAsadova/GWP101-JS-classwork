@@ -26,3 +26,4 @@
 * Home - https://precious-churros-2b2ca2.netlify.app/
 * Drimo - https://sprightly-sherbet-43ae88.netlify.app/
 * BizPro - https://brilliant-frangipane-a77ed2.netlify.app/
+* Gym - https://verdant-piroshki-0ec12e.netlify.app/
