@@ -1,4 +1,4 @@
-# GWP101-JS
+# LIVE-link
 * 01.intro-js - https://superb-elf-15c8e9.netlify.app/
 * 02.if-elseVsSwitch - https://lambent-bombolone-30c53f.netlify.app/
 * 03.loops(for,while) - https://shiny-axolotl-9e2e67.netlify.app/
@@ -24,3 +24,5 @@
 * Country-cards - https://sparkly-puffpuff-4b8292.netlify.app/
 * Adopted - https://lovely-lollipop-d20306.netlify.app/
 * Home - https://precious-churros-2b2ca2.netlify.app/
+* Drimo - https://sprightly-sherbet-43ae88.netlify.app/
+* BizPro - https://brilliant-frangipane-a77ed2.netlify.app/
