@@ -1,4 +1,4 @@
-let BASE_URL_fav = "http://localhost:8080/fav";
+let BASE_URL_fav = "http://localhost:8090/fav";
 let boxes = document.querySelector(".boxes");
 
 async function getdata() {

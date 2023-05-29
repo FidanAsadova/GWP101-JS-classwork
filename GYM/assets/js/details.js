@@ -1,5 +1,5 @@
 let id = new URLSearchParams(window.location.search).get("id");
-let BASE_URL = "http://localhost:8080/clients";
+let BASE_URL = "http://localhost:8090/clients";
 let boxes = document.querySelector(".boxes");
 
 async function getdata() {

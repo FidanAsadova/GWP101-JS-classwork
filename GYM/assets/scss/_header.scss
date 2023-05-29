@@ -1,3 +1,6 @@
+.menu-icon {
+  display: none;
+}
 header {
   box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
   position: fixed;
@@ -61,10 +64,45 @@ header {
               color: black;
               font-size: 13px;
               font-weight: 600;
-              transition: .5s;
-              &:hover{
-                color: #F6214B;
+              transition: 0.5s;
+              &:hover {
+                color: #f6214b;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .menu-icon {
+    // display: none;
+    transition: 0.5s;
+
+    &.showmenu {
+      display: flex;
+      position: fixed;
+      background-color: rgba(0, 0, 0, 0.9);
+      margin-top: 60px;
+      height: 80%;
+      width: 20%;
+      padding: 40px 20px;
+      z-index: 12;
+      .menu-ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        transition: 0.5s;
+        li {
+          a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+            &:hover {
+              color: #f6214b;
             }
           }
         }

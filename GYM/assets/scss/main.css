@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+.menu-icon {
+  display: none;
+}
+
 header {
   box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
   position: fixed;
@@ -77,9 +81,39 @@ header .nav-con .nav nav .nav-ul li a {
   transition: 0.5s;
 }
 header .nav-con .nav nav .nav-ul li a:hover {
-  color: #F6214B;
+  color: #f6214b;
 }
 
+@media only screen and (max-width: 991px) {
+  .menu-icon {
+    transition: 0.5s;
+  }
+  .menu-icon.showmenu {
+    display: flex;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-top: 60px;
+    height: 80%;
+    width: 20%;
+    padding: 40px 20px;
+    z-index: 12;
+  }
+  .menu-icon.showmenu .menu-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    transition: 0.5s;
+  }
+  .menu-icon.showmenu .menu-ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .menu-icon.showmenu .menu-ul li a:hover {
+    color: #f6214b;
+  }
+}
 body {
   position: relative;
   z-index: 999;

@@ -1,10 +1,18 @@
-let BASE_URL = "http://localhost:8080/clients";
-let BASE_URL_fav = "http://localhost:8080/fav";
+let BASE_URL = "http://localhost:8090/clients";
+let BASE_URL_fav = "http://localhost:8090/fav";
 let boxes = document.querySelector(".boxes");
 let bool = false;
 let sort = document.querySelector(".sort");
 let load = document.querySelector(".load");
+let menu = document.querySelector(".nav-menu");
+let menuDiv = document.querySelector(".menu-icon")
 let search = document.querySelector("#search");
+let num = 3;
+
+menu.addEventListener("click", function(e){
+  e.preventDefault()
+  menuDiv.classList.toggle("showmenu")
+})
 
 async function getdata() {
   let res = await axios.get(BASE_URL);
@@ -15,7 +23,7 @@ getdata();
 
 function drawClients(arr) {
   boxes.innerHTML = "";
-  arr.forEach((element) => {
+  arr.slice(0, num).forEach((element) => {
     boxes.innerHTML += `
     <span class="col col-sm-12 col-md-6 col-lg-4 mb-5">
               <div class="box d-flex flex-column p-4">
@@ -82,6 +90,8 @@ async function favClients(favId) {
 // favClients();
 
 load.addEventListener("click", async function (e) {
-  e.preventDefault()
-    
+  e.preventDefault();
+  num = num + 3;
+  getdata();
 });
+
