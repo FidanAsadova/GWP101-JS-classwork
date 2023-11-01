@@ -28,3 +28,4 @@
 * BizPro - https://brilliant-frangipane-a77ed2.netlify.app/
 * Gym - https://verdant-piroshki-0ec12e.netlify.app/
 * Robotics - https://jolly-zuccutto-0f7a66.netlify.app/
+* Search-Universty - https://coruscating-licorice-001914.netlify.app/
